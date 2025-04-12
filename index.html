@@ -1,67 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Формула Власти</title>
-  <link rel="stylesheet" href="style.css">
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: 'Segoe UI', sans-serif;
       background-color: #000;
       color: #fff;
-    }
-
-    .hero {
-      min-height: 100vh;
-      background: url('cover.jpg') repeat-y center top;
-      background-size: contain;
+      font-family: sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
       align-items: center;
-      padding-bottom: 60px;
+      justify-content: center;
+      height: 100vh;
     }
-
-    .button {
-      background-color: #ff0077;
-      color: white;
+    .cover {
+      position: relative;
+      width: 100%;
+      max-width: 1280px;
+    }
+    .cover img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .buttons a {
       padding: 12px 24px;
-      margin: 10px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
+      background-color: #fff;
+      color: #000;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 4px;
       transition: background 0.3s;
     }
-
-    .button:hover {
-      background-color: #cc005f;
-    }
-
-    .copyright {
-      font-size: 13px;
-      color: #aaa;
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .button {
-        width: 80%;
-        max-width: 300px;
-      }
+    .buttons a:hover {
+      background-color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <a class="button" href="chapters.html">Читать</a>
-    <a class="button" href="media.html">Медиа</a>
-    <div class="copyright">© Axel Ironcat. Все права защищены.</div>
+  <div class="cover">
+    <img src="formula_vlasti_cover_adapted.jpg" alt="Формула Власти">
+  </div>
+  <div class="buttons">
+    <a href="chapters.html">Читать</a>
+    <a href="media.html">Медиа</a>
   </div>
 </body>
 </html>
