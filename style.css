@@ -16,10 +16,11 @@ html, body {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-p {
+.container p {
   text-indent: 2em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.6em;
   text-align: justify;
+  display: block;
 }
 
 a {
