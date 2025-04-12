@@ -6,9 +6,9 @@ body {
   background: #ffffff;
   color: #111;
 }
-main p {
+main p.paragraph {
   text-indent: 2em;
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
 }
 h1 {
   text-align: center;
