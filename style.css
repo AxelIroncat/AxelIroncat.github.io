@@ -1,12 +1,11 @@
 
 html, body {
-  background-color: #f6f6f6;
-  color: #222;
+  background-color: #f0f0f0;
+  color: #2a2a2a;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  -webkit-text-size-adjust: 100%;
 }
 
 .container {
@@ -14,16 +13,15 @@ html, body {
   margin: 0 auto;
   padding: 40px 20px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
 
 p {
   margin-bottom: 1.2em;
-  white-space: normal;
 }
 
 a {
-  color: #005b99;
+  color: #004488;
   text-decoration: none;
 }
 
@@ -40,14 +38,14 @@ h1, h2, h3 {
   text-align: right;
   font-style: italic;
   font-size: 1em;
-  color: #666;
+  color: #555;
   margin-bottom: 3em;
 }
 
 .chapter-title {
   margin: 2em 0 1em;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: center;
 }
 
