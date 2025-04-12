@@ -5,14 +5,68 @@
   <meta charset="UTF-8">
   <title>Formula of Power</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('cover.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-style: italic;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      padding: 12px 24px;
+      margin: 0 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <h1 class="site-title">FORMULA OF POWER</h1>
-  <p class="site-subtitle">A science fiction novel by <strong>Axel Ironcat</strong></p>
-</header>
-
-<!-- Остальной контент сайта -->
-
+  <div class="hero">
+    <h1>FORMULA OF POWER</h1>
+    <p>A science fiction novel by <strong>Axel Ironcat</strong></p>
+    <div class="buttons">
+      <a href="chapters.html">Read</a>
+      <a href="media.html">Media</a>
+    </div>
+  </div>
 </body>
 </html>
