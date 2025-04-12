@@ -1,12 +1,11 @@
 
-html, body {
-  background-color: #000 !important;
-  color: #fff !important;
+body {
+  background-color: #000;
+  color: #fff;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  -webkit-text-size-adjust: 100%;
 }
 
 .container {
@@ -17,7 +16,6 @@ html, body {
 
 p {
   margin-bottom: 1.2em;
-  white-space: normal;
 }
 
 a {
