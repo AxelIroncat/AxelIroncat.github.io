@@ -16,7 +16,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
     }
     .cover {
       position: relative;
@@ -31,6 +31,8 @@
     .buttons {
       margin-top: 20px;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
     }
     .buttons a {
@@ -45,15 +47,25 @@
     .buttons a:hover {
       background-color: #ccc;
     }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="cover">
-    <img src="formula_vlasti_cover_adapted.jpg" alt="Формула Власти">
+    <img src="formula_vlasti_cover_adapted_resized.jpg" alt="Формула Власти">
   </div>
   <div class="buttons">
     <a href="chapters.html">Читать</a>
     <a href="media.html">Медиа</a>
+    <a href="discuss.html">Обсуждение</a>
   </div>
+  <footer>
+    © AxelIroncat. Все права защищены.
+  </footer>
 </body>
 </html>
