@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 29. Threshold of Recognition — Formula of Power</title>
+    <style>
+        /* Basic styles for the document body */
+        body {
+            background: #fff; /* White background */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styles for the content container */
+        .container {
+            max-width: 900px; /* Maximum width of the container */
+            margin: 40px auto; /* Top/bottom margins and horizontal centering */
+            padding: 0 20px; /* Internal side padding */
+            font-family: Georgia, serif; /* Serif font */
+            font-size: 18px; /* Font size */
+            line-height: 1.6; /* Line height */
+            background: white; /* White background for content */
+        }
+
+        /* Styles for paragraphs */
+        .container p {
+            text-indent: 2em; /* First line indent */
+            margin: 1em 0; /* Margins between paragraphs */
+            text-align: justify; /* Justify text */
+        }
+
+        /* Styles for chapter headings */
+        h1 {
+            font-size: 2.2em; /* Heading font size */
+            font-weight: bold; /* Bold font */
+            text-align: center; /* Center alignment */
+            margin-bottom: 0.7em; /* Bottom margin */
+        }
+
+        /* Styles for navigation links */
+        .nav {
+            text-align: center; /* Center alignment */
+            margin: 1em 0; /* Top/bottom margins */
+        }
+
+        /* Styles for language switcher */
+        .lang-switch {
+            position: absolute; /* Absolute positioning */
+            top: 10px; /* Top offset */
+            right: 10px; /* Right offset */
+            display: flex; /* Use flexbox for buttons */
+            flex-direction: row; /* Arrange buttons in a row */
+            gap: 10px; /* Space between buttons */
+            z-index: 1000; /* Above other elements */
+            font-size: 0.9em; /* Font size */
+        }
+
+        /* Styles for language switch buttons */
+        .lang-button {
+            display: inline-block; /* Display as inline-block element */
+            width: 36px; /* Button width */
+            height: 36px; /* Button height */
+            line-height: 36px; /* Vertical alignment of text */
+            text-align: center; /* Center alignment of text */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            color: #000; /* Black text color */
+            font-weight: bold; /* Bold font */
+            border-radius: 4px; /* Rounded corners */
+            text-decoration: none; /* No underline */
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Shadow */
+            transition: background-color 0.2s; /* Smooth transition on hover */
+        }
+
+        /* Styles on hover for language button */
+        .lang-button:hover {
+            background-color: rgba(200, 200, 200, 0.9); /* Change background on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Language switcher container -->
+    <div class="lang-switch">
+        <a class="lang-button" href="29.html">RU</a>
+        <a class="lang-button" href="29_en.html">EN</a>
+        <a class="lang-button" href="29_jp.html">JP</a>
+    </div>
+
+    <div class="container">
+        <!-- Top navigation -->
+        <div class="nav">
+            <a href="28_en.html">← Back</a> |
+            <a href="chapters_en.html">Contents</a> |
+            <a href="30_en.html">Forward →</a>
+        </div>
+
+        <h1>Chapter 29. Threshold of Recognition</h1>
+
+        <p>Twisting like stone intestines, the collector tunnels spilled them into a dead-end, abandoned subway branch. It was even darker and colder here than in the sewers. The sparse beams of their flashlights, barely piercing the thick gloom, caught glimpses of peeled walls overgrown with black, slick mold and the corroded remains of cable mounts, like the skeletal spines of extinct creatures. Underfoot, wet sludge squelched softly, slick with oily rainbow streaks that reeked of chemicals and rot. The city’s hum was long gone, as if they had passed beneath the threshold of the known world and into a place where no sound from above could reach.</p>
+        <p>They walked in silence, each wrapped in their own thoughts, shadows of the previous battle still clinging to their bodies. The air hung heavy in their lungs, thick as syrup, as if the tunnel itself resisted their passage. Now and then, a gust of air rushed through, rattling scraps of paper and bringing with it the biting smell of rust. Max shivered. Only the rhythm of their footsteps and the hollow drip of unseen water broke the silence.</p>
+        <p>Eventually, Lis slowed and raised a hand. Ahead, in the gloom, faint shapes emerged. Max stepped to the side—and Royce grabbed him back hard.</p>
+        <p>"Tripwire," he muttered. "Careful. You almost triggered it."</p>
+        <p>Max froze, now spotting the thin filament strung near the floor. He didn’t know whose it was or what it would trigger. He could’ve doomed them all—her most of all. He didn’t dare look up, but Lis was already watching him. A subtle nod: it’s fine. They circled around the trap.</p>
+        <p>A few minutes later, sticking close to the wall, they reached a heavy steel door embedded in a service corridor—an entrance to nowhere. Lis knocked three times—short, sharp raps. Pause. Then two more. A moment later came the scrape of bolts, the groan of strained hinges, and the door slowly opened inward.</p>
+        <p>Beyond lay a wide chamber—once a utility room, now turned into a hidden shelter. It was makeshift but lived-in, unexpectedly warm: threadbare but clean carpets on the concrete floor, boxes of supplies and tools stacked along the walls. A few worn sofas and armchairs were arranged in a loose circle beneath dim hanging lamps, casting pools of soft yellow light. One table bristled with communications equipment; another displayed a large city map, cluttered with colored markers. From a corner, a generator hummed quietly, like a machine breathing in its sleep.</p>
+        <p>From the glow of the lights stepped Adam Lawrence. Tall, confident, he approached with a warm and genuine smile.</p>
+        <p>"Lis." He pulled her into a tight embrace, briefly squeezing her shoulder like to confirm she was truly there. "Glad you’re safe."</p>
+        <p>"Mostly," she replied, managing a faint smile.</p>
+        <p>His gaze shifted to Max. His eyes traced him—reading the marks left by the fight—then he nodded, as if settling something internally.</p>
+        <p>"We haven’t met. Adam Lawrence."</p>
+        <p>Max shook his hand. "Max."</p>
+        <p>"Just Max?" There was a flicker of humor in his voice.</p>
+        <p>"That’s enough for now," Max said, tension easing slightly.</p>
+        <p>Lawrence smirked but let it go. He could tell Max was more than he seemed. His attention turned to Royce, who dumped Green’s limp body onto the floor.</p>
+        <p>"We’ll deal with him later," said Lawrence. "Lock him in the next room. I don’t want him listening in."</p>
+        <p>Royce grunted, slung Green over his shoulder, and disappeared down a dark hallway.</p>
+        <p>"Let’s sit," Lawrence offered.</p>
+        <p>They gathered around the circle of couches. A heavy silence settled, anticipatory. Max’s exhaustion drained away, replaced by taut focus. Lawrence spoke first, voice steady but pointed.</p>
+        <p>"I think you have a lot to tell us."</p>
+        <p>Max nodded, ran a hand over his face. His shoulders sagged.</p>
+        <p>"I’m a graduate student under Professor Blinov. He was studying matter and spatial control. He discovered a new way to manipulate force fields. But he hid it. He never wanted the corporation to have it."</p>
+        <p>Lawrence’s face darkened.</p>
+        <p>"But they found out? How?"</p>
+        <p>Max’s hands clenched into fists.</p>
+        <p>"Because of me."</p>
+        <p>Lis and Lawrence exchanged glances.</p>
+        <p>"The parliament attack," Max said quietly. "They tried to kill you. I acted without thinking."</p>
+        <p>Lawrence slowly nodded. Lis’s eyes widened.</p>
+        <p>"You were there?"</p>
+        <p>"I was. And so were they. The corporation investigated. The cuts left behind—they weren’t from lasers, plasma, or acid. It led them to the university. And from there—to him."</p>
+        <p>Max swallowed.</p>
+        <p>"It’s my fault. I used the tech in the open. I didn’t consider the consequences."</p>
+        <p>"Then I’d be dead," Lawrence said, evenly. "You saved me. This isn’t your fault. It’s theirs. They want control of everything."</p>
+        <p>Max didn’t answer. Guilt still weighed heavy.</p>
+        <p>"What matters is Blinov’s in their hands. And we’re almost out of time."</p>
+        <p>He pulled a compact device from his belt, flicked a switch. A transparent blade of field shimmered into view, warping the air. Lis stared in disbelief. Lawrence leaned forward.</p>
+        <p>"I adapted his tech. It’s not metal—it’s energy. It cuts through steel like butter."</p>
+        <p>He placed a rusted bolt on the table and pressed the blade through it. The field parted the metal in silence, leaving a flawless cut.</p>
+        <p>"You could make armor nothing can pierce. Or weapons that can pierce anything."</p>
+        <p>Lis covered her mouth. Her eyes reflected both awe and dread.</p>
+        <p>"The corporation could build this too..."</p>
+        <p>"If we don’t stop them, they’ll build worse," Max said.</p>
+        <p>A long silence. Lawrence shut his eyes, breathed deep.</p>
+        <p>"We need to get the professor back."</p>
+        <p>"As soon as possible," Max confirmed.</p>
+        <p>Lawrence nodded. "We’ll help. Whatever it takes."</p>
+        <p>Lis watched Max closely, brows drawn.</p>
+        <p>"Too many coincidences," she murmured. "You’re always where someone needs saving. Adam. Us. Like someone’s guiding you. That’s... unsettling."</p>
+        <p>Max opened his mouth—but a voice cut in from the shadows.</p>
+        <p>"Heroes never appear by chance. They arrive when they’re meant to."</p>
+        <p>They all turned. On a shadowed couch sat a gaunt man. Balding, razor-cheekboned, eyes black and penetrating. He had blended so completely into the room that no one had noticed him until now.</p>
+        <p>Lawrence gave a faint smile.</p>
+        <p>"Max, meet Master Hidefumi Yamaguchi."</p>
+        <p>Max swallowed, nodded. "An honor."</p>
+        <p>Yamaguchi inclined his head slightly. His stare didn’t waver.</p>
+        <p>"I’m no hero," Max said. "Just a guy with gadgets."</p>
+        <p>A ghost of a smile touched Yamaguchi’s lips.</p>
+        <p>"A guy with gadgets would’ve kept walking. Would’ve chosen peace. Not the fight. Not the search for his teacher."</p>
+        <p>Max went still. The words lodged deep.</p>
+        <p>Lawrence nodded. Max felt suddenly exposed.</p>
+        <p>Then Lis laughed. Her voice rang out like a spark in the gloom.</p>
+        <p>"Relax. I’ve been in your class. You’re definitely not a corporate spy. Hell, you’re barely passing for a teacher."</p>
+        <p>Max flushed, unsure what to say. Lis winked.</p>
+        <p>"But you did get us out. So today? Yeah. Hero. But just for today. Got it?"</p>
+        <p>Yamaguchi leaned back, his gaze drifting from Max to Lis. Something ancient and calm flickered behind his eyes.</p>
+        <p>The silence that followed was different now—warmer. Max felt, for the first time, that he was part of something real.</p>
+
+        <!-- Bottom navigation -->
+        <div class="nav">
+            <a href="28_en.html">← Back</a> |
+            <a href="chapters_en.html">Contents</a> |
+            <a href="30_en.html">Forward →</a>
+        </div>
+    </div>
+</body>
+</html>

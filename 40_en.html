@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 40. Something’s Wrong — Formula of Power</title>
+    <style>
+        /* Basic styles for the document body */
+        body {
+            background: #fff; /* White background */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styles for the content container */
+        .container {
+            max-width: 900px; /* Maximum width of the container */
+            margin: 40px auto; /* Top/bottom margins and horizontal centering */
+            padding: 0 20px; /* Internal side padding */
+            font-family: Georgia, serif; /* Serif font */
+            font-size: 18px; /* Font size */
+            line-height: 1.6; /* Line height */
+            background: white; /* White background for content */
+        }
+
+        /* Styles for paragraphs */
+        .container p {
+            text-indent: 2em; /* First line indent */
+            margin: 1em 0; /* Margins between paragraphs */
+            text-align: justify; /* Justify text */
+        }
+
+        /* Styles for chapter headings */
+        h1 {
+            font-size: 2.2em; /* Heading font size */
+            font-weight: bold; /* Bold font */
+            text-align: center; /* Center alignment */
+            margin-bottom: 0.7em; /* Bottom margin */
+        }
+
+        /* Styles for navigation links */
+        .nav {
+            text-align: center; /* Center alignment */
+            margin: 1em 0; /* Top/bottom margins */
+        }
+
+        /* Styles for language switcher */
+        .lang-switch {
+            position: absolute; /* Absolute positioning */
+            top: 10px; /* Top offset */
+            right: 10px; /* Right offset */
+            display: flex; /* Use flexbox for buttons */
+            flex-direction: row; /* Arrange buttons in a row */
+            gap: 10px; /* Space between buttons */
+            z-index: 1000; /* Above other elements */
+            font-size: 0.9em; /* Font size */
+        }
+
+        /* Styles for language switch buttons */
+        .lang-button {
+            display: inline-block; /* Display as inline-block element */
+            width: 36px; /* Button width */
+            height: 36px; /* Button height */
+            line-height: 36px; /* Vertical alignment of text */
+            text-align: center; /* Center alignment of text */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            color: #000; /* Black text color */
+            font-weight: bold; /* Bold font */
+            border-radius: 4px; /* Rounded corners */
+            text-decoration: none; /* No underline */
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Shadow */
+            transition: background-color 0.2s; /* Smooth transition on hover */
+        }
+
+        /* Styles on hover for language button */
+        .lang-button:hover {
+            background-color: rgba(200, 200, 200, 0.9); /* Change background on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Language switcher container -->
+    <div class="lang-switch">
+        <a class="lang-button" href="40.html">RU</a>
+        <a class="lang-button" href="40_en.html">EN</a>
+        <a class="lang-button" href="40_jp.html">JP</a>
+    </div>
+
+    <div class="container">
+        <!-- Top navigation -->
+        <div class="nav">
+            <a href="39_en.html">← Back</a> |
+            <a href="chapters_en.html">Contents</a> |
+            <a href="41_en.html">Forward →</a>
+        </div>
+
+        <h1>Chapter 40. Something’s Wrong</h1>
+
+        <p>The room was dim, lit only by the faint yellow glow of old lamps dangling from the ceiling on long, exposed wires. The air was heavy, thick with damp concrete, rusted metal, and a faint trace of ozone from overworked machinery. This wasn’t just a hideout—it was a labyrinth of winding tunnels, where each turn bred new shadows, and every echo sounded like a warning from the dark. Crates of supplies and weapons were stacked against the walls; old, sagging sofas and scavenged armchairs formed a loose circle in the middle.</p>
+        <p>Royce sat with his back to the wall, his broad shoulders nearly brushing the rough concrete. He slowly flexed and unflexed his gloved fingers, listening to the muted hum of distant machinery as he tested the feel of his gear. Lis, catlike and relaxed, stretched atop her upside-down crate. Her lean frame arched with casual grace, her expression disinterested as she half-listened to the voices at the table.</p>
+        <p>The adults had gathered for a strategy session. Their faces were tight with fatigue and focus as they debated their next move. Max sat a little apart, still half-lost in the storm of wave equations and flashbacks—colliding fields, shouts, kinetic shockwaves that hadn’t left his nervous system. But the gravity of the conversation was pulling him in. He started listening.</p>
+        <p>“It doesn’t matter how much military power the Corporation has,” Lawrence was saying, arms folded across his chest. His voice was steady, but fatigue clung to its edges. “If people see through the lies—if even their own employees start to question—eventually the whole thing collapses from the inside. We need to open their eyes.”</p>
+        <p>Richard Vale rubbed the bridge of his nose, his voice calm but firm in reply.“I wouldn’t underestimate their ability to keep control. Fear is a powerful tool. I’ve felt it myself.”</p>
+        <p>Green, who had remained quiet until now, gave a slight nod. His gaze stayed fixed on the floor, but in his eyes, for the first time in days, a flicker of hope stirred.</p>
+        <p>“People still need to know the truth,” Lawrence continued, his eyes sweeping across the group. “Yes, the Corporation will retaliate. Hard. But that’s how we’ll see who’s really on which side.”</p>
+        <p>Vale rested his elbows on the table, hands folded beneath his chin.“So what exactly are you proposing?”</p>
+        <p>“We start an information war. Expose the Corporation for what it really is.”</p>
+        <p>“You severely underestimate their control of the narrative,” Vale said, voice cooling. “They’ll drown you in disinformation. I’ve seen the numbers from their PR division. As a board member, I assure you—entire national healthcare systems cost less.”</p>
+        <p>“That might actually work in our favor,” Lawrence countered. “If you come forward. If you testify to what you’ve seen.”</p>
+        <p>“My voice alone won’t be enough. The moment I speak out, the Corporation’s mouthpieces will spin it. Say I was removed for embezzlement, or misconduct. Make it all about revenge. People will forget within days.”</p>
+        <p>“Then I’ll speak too,” Lawrence said. “I still have the trust of voters. At least, some of them.”</p>
+        <p>“Even the two of us won’t be enough to break through.”</p>
+        <p>“We have one more witness,” Lawrence added. “The mercenary who led the assault on parliament. If we can convince him…”</p>
+        <p>Royce, who’d been listening in silence, finally spoke, his voice heavy with skepticism.“Can we really trust him? You remember this is the guy who tried to execute you in cold blood. These men don’t have a conscience.”</p>
+        <p>“The enemy of my enemy is my friend,” Lawrence said. “After what they did to him, he might want revenge,” he finished, still thinking out loud.</p>
+        <p>“The Corporation will call it fake,” Max interjected, shaking his head with quiet cynicism.</p>
+        <p>“Not if we use their own encryption protocols,” Lawrence replied with a dry smile. “They’re the ones who claim their format is tamper-proof.”</p>
+        <p>“Maybe if you add my testimony too,” Green said suddenly, his voice low but alive for the first time in what felt like days. “As a board member, I’m a known face. I can talk about the abductions. The torture. I can describe the boardroom where they discussed a full governmental power grab. Though honestly… I’m not even sure why they bother. The board hasn’t had real power for years. All of it rests in Iris Tanaka’s hands now.”</p>
+        <p>The moment her name was spoken, silence descended like a physical weight.</p>
+        <p>“Well then,” Vale said at last, his tone quietly resolute. “If we can stack enough truth on one side, we might just tip the balance. People will start questioning. Then doubting. Then talking. Eventually, maybe… believing that the Corporation is the real threat.”</p>
+        <p>It was subtle, but it looked like something shifted in Vale’s spine—like some invisible weight had lifted, and he could finally stand straight again.</p>
+        <p>“Question is,” Royce muttered, “will our potential ally agree to help?”</p>
+        <p>He walked to the locked door and disengaged the lock with a flick. It creaked open.</p>
+        <p>Mikhailo stepped out—short, broad-shouldered, worn to the bone. His face was battered and bruised, his clothes wrinkled and torn. His hands were tied tightly behind his back. But when his eyes scanned the room and landed on Max, he gave a faint nod—acknowledging him. There was no aggression in his gaze now. Just exhaustion, resignation… and something like relief—too raw to be peaceful. As if he’d finally set down a weight he didn’t know he’d been carrying.</p>
+        <p>Lawrence gestured to a chair. Mikhailo sat down slowly, like every movement hurt.</p>
+        <p>“Tell us who you are—and why they had you locked up inside a corporate black site,” Vale said. His tone was calm, but firm.</p>
+        <p>Mikhailo took a deep breath and ran a hand across the stubble on his face.“My name is Mikhailo. I was the field commander for a mercenary unit the Corporation used for sensitive jobs. Mostly overseas. The pay was always good. Clean, efficient contracts. We never asked questions. But this time…”</p>
+        <p>He paused, eyes lowering. Max, watching from the corner, tensed—his gaze drifting from Mikhailo’s shoulders to the lines on his face.</p>
+        <p>“This time, they wanted to erase us. Maybe because I let Lawrence escape. Maybe that was always the plan.”</p>
+        <p>He clenched his jaw.</p>
+        <p>“My men never had a chance. Their weapons. Their armor. We were professionals—good ones. But this wasn’t a fight. It was slaughter. And then they tortured me. For surviving. For failing.”</p>
+        <p>Lawrence leaned in, his voice softer but no less insistent.“Tell us about the attack on Parliament. Who gave the order? How was it planned?”</p>
+        <p>Mikhailo looked up. For a second, he hesitated. Then he nodded.“The order came from Friedrich Steiner. Said it was a destabilization op—to justify deploying Kairo forces in the city. We were supposed to create chaos. Then pull out cleanly the next morning.”</p>
+        <p>Royce grunted.“And you believed they’d let you just walk away? After everything you saw?”</p>
+        <p>A bitter smirk twisted across Mikhailo’s face.“Steiner had always been straight with us before. I had no reason to doubt him. But once the assault started, I knew. I knew we were dead. I just couldn’t stop it. They own everything. And Iris Tanaka… she’s not human. She’s evil made flesh.”</p>
+        <p>Silence again—but this time, it was electric. Tense. Coiled like a trap waiting to spring. What Mikhailo said rang too true.</p>
+        <p>Lawrence and Vale exchanged a glance. A spark of hope flickered between them. Maybe this was the turning point.</p>
+        <p>But in the far corner, Max watched Mikhailo with unblinking intensity. A chill was crawling up his spine. His fingers curled slowly into fists.</p>
+        <p>Lawrence spoke gently, almost kindly.“Mikhailo… if you’re willing, we’d like to record a testimony. Have you tell this story on camera. It could open a lot of eyes.”</p>
+        <p>Mikhailo’s gaze lifted. A flicker of hesitation. Then he nodded.“Yes. I’ll do it. I’ll do whatever it takes to make the Corporation pay for what they did to my people. And to me.”</p>
+        <p>He shifted in the chair, wincing.“But… my hands are killing me. And my throat’s like sand. Can someone untie me and give me some water?”</p>
+        <p>Vale gave Royce a nod. With practiced ease, Royce pulled a knife and sliced through the ropes. The bindings dropped to the floor in a soft coil. Mikhailo slowly flexed his wrists, grimacing—then looked around the room.</p>
+        <p>Something shifted.</p>
+        <p>It wasn’t relief in his eyes. Not anymore. It was something sharper. Colder. A flicker of calculation. Precision. Control.</p>
+        <p>Max felt it before he saw it. The air had thickened with something electric, invisible and immediate. His whole body pulled taut—like a wire stretched to the edge of snapping. He watched Mikhailo’s fingers curl, saw the way his eyes scanned the room now. Not like a prisoner. Like a tactician.</p>
+        <p>Lis straightened on her crate, her usual air of lazy confidence gone. Her gaze sharpened, focused. She had felt it too.</p>
+        <p>Royce, midway through checking his gloves, froze. His head tilted, as if listening to something no one else could hear.</p>
+        <p>And then Max stood.Eyes wide. Voice urgent.“We need to get out. Now. All of us.”</p>
+
+        <!-- Bottom navigation -->
+        <div class="nav">
+            <a href="39_en.html">← Back</a> |
+            <a href="chapters_en.html">Contents</a> |
+            <a href="41_en.html">Forward →</a>
+        </div>
+    </div>
+</body>
+</html>
