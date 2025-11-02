@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -43,9 +44,39 @@
       font-weight: bold;
       text-decoration: none;
     }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .lang-button {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #000;
+      font-weight: bold;
+      border-radius: 4px;
+      text-decoration: none;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s;
+    }
+    .lang-button:hover {
+      background-color: rgba(200, 200, 200, 0.9);
+    }
   </style>
 </head>
 <body>
+  <div class="lang-switch">
+    <a class="lang-button" href="stories_en.html">EN</a>
+    <a class="lang-button" href="stories_jp.html">JP</a>
+  </div>
   <h1>Рассказы</h1>
   <ul>
     <li>
@@ -56,9 +87,18 @@
       <a href="filosofiya_evolyutsii.html">Философия эволюции</a><br />
       <span class="note">эссе</span>
     </li>
+    <li>
+      <a href="iskra_zhizni.html">Искра жизни</a><br />
+      <span class="note">рассказ</span>
+    </li>
+    <li>
+      <a href="civilization.html">Почему высокоразвитая цивилизация, если она существует, нас не захватит, не уничтожит, и не выйдет с нами на контакт</a><br />
+      <span class="note">эссе</span>
+    </li>
   </ul>
   <div class="back-home">
     <a href="index.html">← На главную</a>
   </div>
 </body>
 </html>
+```
