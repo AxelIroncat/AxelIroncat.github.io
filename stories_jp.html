@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>物語</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #ddd;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 20px 0;
+    }
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .back-home {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .back-home a {
+      color: #00ccff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .lang-button {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #000;
+      font-weight: bold;
+      border-radius: 4px;
+      text-decoration: none;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s;
+    }
+    .lang-button:hover {
+      background-color: rgba(200, 200, 200, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a class="lang-button" href="stories.html">RU</a>
+    <a class="lang-button" href="stories_en.html">EN</a>
+  </div>
+  <h1>物語</h1>
+  <ul>
+    <li>
+      <a href="cogito_ergo_sum_jp.html">私たちは眠っていないとどう確信できるか</a><br />
+      <span class="note">エッセイ</span>
+    </li>
+    <li>
+      <a href="filosofiya_evolyutsii_jp.html">進化の哲学</a><br />
+      <span class="note">エッセイ</span>
+    </li>
+    <li>
+      <a href="iskra_zhizni_jp.html">生命の火花</a><br />
+      <span class="note">物語</span>
+    </li>
+    <li>
+      <a href="civilization_jp.html">高度な文明が存在するなら、なぜ私たちを征服せず、破壊せず、接触しないのか</a><br />
+      <span class="note">エッセイ</span>
+    </li>
+  </ul>
+  <div class="back-home">
+    <a href="index_jp.html">← ホームに戻る</a>
+  </div>
+</body>
+</html>

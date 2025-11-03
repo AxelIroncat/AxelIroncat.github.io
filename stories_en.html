@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stories</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #ddd;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 20px 0;
+    }
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .back-home {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .back-home a {
+      color: #00ccff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .lang-button {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #000;
+      font-weight: bold;
+      border-radius: 4px;
+      text-decoration: none;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.2s;
+    }
+    .lang-button:hover {
+      background-color: rgba(200, 200, 200, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a class="lang-button" href="stories.html">RU</a>
+    <a class="lang-button" href="stories_jp.html">JP</a>
+  </div>
+  <h1>Stories</h1>
+  <ul>
+    <li>
+      <a href="cogito_ergo_sum_en.html">How Can We Be Sure We Are Not Asleep</a><br />
+      <span class="note">essay</span>
+    </li>
+    <li>
+      <a href="filosofiya_evolyutsii_en.html">Philosophy of Evolution</a><br />
+      <span class="note">essay</span>
+    </li>
+    <li>
+      <a href="iskra_zhizni_en.html">Spark of Life</a><br />
+      <span class="note">story</span>
+    </li>
+    <li>
+      <a href="civilization_en.html">Why an Advanced Civilization, If It Exists, Wouldn't Conquer, Destroy, or Contact Us</a><br />
+      <span class="note">essay</span>
+    </li>
+  </ul>
+  <div class="back-home">
+    <a href="index_en.html">← Back to Home</a>
+  </div>
+</body>
+</html>
