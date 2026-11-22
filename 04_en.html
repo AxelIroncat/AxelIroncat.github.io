@@ -5,7 +5,7 @@
     <title>Chapter 4. Shadow on the Streets — Formula of Power</title>
     <link href="style.css" rel="stylesheet"/>
     <style>
-        /* General container styling */
+        /* Основные стили контейнера */
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -15,16 +15,52 @@
             font-size: 18px;
             line-height: 1.6;
             background-color: white;
+            position: relative; /* Для позиционирования переключателя */
         }
 
-        /* Paragraph styling */
-        .container p {
+        /* Квадратные кнопки переключения языков в углу */
+        .lang-switch-top {
+            position: absolute;
+            top: -30px;
+            right: 20px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .lang-box {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            color: #333;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        .lang-box:hover {
+            background: #eee;
+            border-color: #999;
+        }
+
+        .lang-box.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        /* Стили параграфов из твоего файла */
+        .MsoNormal {
             text-indent: 2em;
             margin: 1em 0;
             text-align: justify;
         }
 
-        /* Chapter title styling */
         h1 {
             font-size: 2.2em;
             font-weight: bold;
@@ -32,10 +68,10 @@
             margin-bottom: 0.7em;
         }
 
-        /* Navigation bar styling */
+        /* Нижняя навигация */
         .nav {
             text-align: center;
-            margin: 1em 0;
+            margin: 2em 0;
             padding: 10px 0;
             background-color: #f0f0f0;
             border-radius: 5px;
@@ -47,95 +83,245 @@
             color: #007bff;
             padding: 8px 15px;
             margin: 0 5px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav a:hover {
-            background-color: #e2e6ea;
-            color: #0056b3;
-        }
-
-        /* Language switch styling */
-        .lang-switch {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            z-index: 1000;
-        }
-
-        .lang-button {
-            display: inline-block;
-            width: 36px;
-            height: 36px;
-            line-height: 36px;
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.7);
-            color: #000;
-            font-weight: bold;
-            border-radius: 4px;
-            text-decoration: none;
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.2s;
-        }
-
-        .lang-button:hover {
-            background-color: rgba(200, 200, 200, 0.9);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px auto;
-                padding: 0 10px;
-            }
-            .lang-switch {
-                flex-direction: column;
-                top: 10px;
-                right: 10px;
-            }
-            .nav a {
-                padding: 6px 10px;
-                margin: 0 2px;
-                font-size: 0.9em;
-            }
+            font-family: Arial, sans-serif;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <main class="container">
-        <!-- Language switch buttons -->
-        <div class="lang-switch">
-            <a class="lang-button" href="04.html">RU</a>
-            <a class="lang-button" href="04_en.html">EN</a>
-            <a class="lang-button" href="04_jp.html">JP</a>
+
+    <div class="container">
+        <!-- Тот самый переключатель: квадратики в углу, JP вместо JA -->
+        <div class="lang-switch-top">
+            <a href="04_en.html" class="lang-box active">EN</a>
+            <a href="04.html" class="lang-box">RU</a>
+            <a href="04_jp.html" class="lang-box">JP</a>
         </div>
 
         <h1>Chapter 4. Shadow on the Streets</h1>
-        <p>Iris Tanaka stood by the panoramic window of her penthouse, from which the lights of the City stretched out. The glass reflected her figure in a black leather dress — flawless, static, like a sculpture. Somewhere below, far beyond her view, life flowed, full of bustle and ignorance.</p>
-        <p>The door slid open silently, and Friedrich Steiner entered — a shadow appearing within the shadows. His movements were fluid, almost soundless, like a predator unwilling to disturb the peace. He stopped a few steps behind her, awaiting her word.</p>
-        <p>"Friedrich," — Iris's voice was low, calm, like the whisper of a night wind. She did not turn. — "How are things with... preparing the ground?"</p>
-        <p>"The ground is ready, Madam," — Steiner replied in an even tone, devoid of any emotion. — "The seeds are sown. We just need to wait for the first shoots."</p>
-        <p>Iris smiled slightly, her lips barely curving. "Shoots are always demanding. They need... stress. For the roots to go deeper."</p>
-        <p>"We can provide the necessary stress," — Steiner offered, and in his voice, there seemed to be a barely perceptible note of anticipation. — "Small tremors. Enough to disrupt equilibrium, but not to overturn the system."</p>
-        <p>"Equilibrium is an illusion, Friedrich," — Iris finally turned. Her eyes seemed to absorb all the darkness of the night sky. — "True equilibrium is born from chaos. From the realization of the fragility of everything that was considered unshakable."</p>
-        <p>"The people demand stability," — Steiner reminded her.</p>
-        <p>"The people demand bread and circuses. And when both are lacking, they begin to seek answers," — Iris took a step towards him. — "And we will give them answers. Our answers."</p>
-        <p>"And what about... sources of instability?" — Steiner looked directly at her, and in that gaze was complete understanding. — "Uncontrolled elements."</p>
-        <p>"All elements are controllable, Friedrich. The only question is the price," — Iris ran her finger over the tip of her nail, perfectly manicured and sharp. — "And how deep we are willing to dig to find the right levers. Everyone has their fulcrum. We just need to find it."</p>
-        <p>"It will be done, Madam," — Steiner nodded, and in that movement was a promise not just of execution, but of a deep understanding of the unspoken.</p>
-        <p>Iris turned back to the window, and her silhouette dissolved into the reflection of the City. "Let the City remember what true power is. Not the one that whispers, but the one that shakes foundations."</p>
-        <p>Silence again filled the penthouse, broken only by the barely audible hum of the distant megalopolis, which would soon feel a new shadow upon itself.</p>
 
-        <!-- Navigation links -->
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><b><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Iris
+stood by the panoramic window, her hands clasped behind her back. Beyond the
+glass, the scattered lights of the capital pulsed with an erratic rhythm, like
+the nervous system of a colossal organism.&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Her
+gaze was focused yet detached, as if she were seeing not just the city, but its
+hidden veins: the flows of people, data, and influence, all ready to be
+reshaped to her will.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>The
+door opened soundlessly.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“You
+summoned me, Ms. Tanaka?” a smooth, measured voice asked.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Come
+in, Friedrich,” she said without turning.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Steiner
+entered and stopped two paces behind her, his movements economical and precise.
+Tall, he was a man trusted with secrets no one else was meant to hear. She
+relied on him.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“I
+need more control,” she said calmly. “We stand at a turning point. The economy
+already runs through us. The next step is the political fabric. It has worn
+thin, like old skin, and it is time to shed it.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Steiner
+remained silent, absorbing every word.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“We
+begin with the capital. From here, we move to the major cities. I want the
+people’s habit of obedience to shift from the state to us. Without resistance.
+Without noise. They should wake up one morning and find themselves living
+within a new system, without even noticing the old one is gone.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Steiner
+missed nothing. <i>At last—something worthy of him.</i><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“And
+the first step,” Iris continued, “must be the integration of our security
+apparatus into the very structure of society. It must be done in such a way
+that no one doubts its necessity—that they believe it is the only way out.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>She
+turned to face him. “Your proposals?”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>He
+gave a short, military-style nod. A fire was rising in him. Finally, a leader
+had emerged who was not afraid of difficult decisions.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“We
+have significant influence over the Eastern and Southern sectors,” Steiner
+began. “Several local factions already depend on us—funding, logistics,
+weaponry. Our special department has embedded agents to coordinate them; we
+hold the reins. We can carefully initiate a chain of skirmishes. Territorial
+conflicts first, then framed as politically motivated. It must look
+spontaneous.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“How
+manageable is it?”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“In
+the first stage—completely. Beyond that, deviations are possible. But our
+coordinators will allow us to guide the escalation and intensify key incidents
+as needed.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“The
+targets?”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Zones
+where your units will be required to appear. We create the sense of a
+threat—and then provide the answer in the form of <span class=SpellE>Kairo’s</span>
+security force. Only they will seem competent.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Iris
+nodded thoughtfully. The clarity of it appealed to her.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Create
+fear. Then offer structure as the solution. People always gravitate toward
+order, even if it is provided by the very one who engineered the chaos.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Exactly,
+Ms. Tanaka,” Steiner confirmed with a predatory smile. He could feel they were
+on the same wavelength.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“We
+can also provoke clashes between certain gangs in the north,” Steiner
+continued. “I have several trusted contractors. Professionals. They’ve handled
+a number of overseas assignments for us. They could easily attack one group
+while disguised as another. Retaliation will follow. Chaos will ensue. The city
+police lack motivation; they don’t have the manpower to handle the unrest.
+Their budget has been gutted for years. The municipal authorities will be
+forced to beg for help. The corporation steps in as the city’s savior.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>He
+paused, letting the vision settle. “After the official request, we conduct a
+sweep. Against the chaos unleashed, we will appear as the guarantors of
+stability.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Provoking
+isn’t the same as ruling,” Iris clarified. “Their actions must appear to
+originate from them, not us. So that no one suspects a thing.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Of
+course. We set the pretext. Provide the catalyst. After that, instinct will do
+the rest.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Steiner
+was drawn to the scale of it. He wondered whether she understood the full risk.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Perhaps,
+at a strategic moment, we should engineer a few incidents at our own
+facilities,” he suggested. “To demonstrate that only <span class=SpellE>Kairo</span>
+has the strength to withstand the chaos. It must be obvious to everyone who
+they should turn to for help.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Iris
+walked slowly around the room, studying Steiner. She saw in him not a pawn, but
+a partner in a dance of shadows.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“I
+will issue a statement,” she said. “First, as a concerned observer. Then, as
+the city’s partner. And in the finale—as the only force capable of restoring
+order. <span class=SpellE>Exosuits</span>, drones, neural networks. Everything
+will be introduced under the guise of temporary assistance.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“The
+corporation can easily transition building security into street patrols,”
+Steiner confirmed. “And integrate them into the city-wide surveillance network.
+That way, we get the full picture. Not just of the streets, but of their
+collective pulse. Their reactions. Their moods.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Iris
+approached the console and activated the panel. A model of the metropolis
+appeared on the screen. Sectors. Points of influence. Data flows.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“And
+what will the chief of security say to this?” Steiner asked. He did not want a
+third party interfering.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“He
+will say what I tell him to say. Begin today. I want the first incidents by
+morning. Nothing major. Just... unsettling. Enough for the news feeds to react.
+Let society feel the tension, like a crack in the foundation.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>Steiner
+inclined his head slightly, a shadow of satisfaction on his face.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Consider
+it already begun.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>He
+turned to leave.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“Friedrich,”
+she called out.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>He
+stopped.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;mso-fareast-font-family:"Times New Roman"'>“You
+understand how dangerous this game is. That is exactly why it is worth it. We
+won't get a second chance. Everything must look like the natural course of
+events. No one must guess that we are pulling the strings of chaos. In this
+game, chaos serves order. The right order.”<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><o:p>&nbsp;</o:p></p>
+
+
+        <!-- Нижняя навигация -->
         <div class="nav">
-            <a href="03_en.html">← Back</a> |
-            <a href="chapters_en.html">Contents</a> |
-            <a href="05_en.html">Forward →</a>
+            <a href="03_en.html">🔙 Previous Chapter</a>
+            <a href="chapters_en.html">🏠 Table of Contents</a>
+            <a href="05_en.html">Next Chapter 🔜</a>
         </div>
-    </main>
+    </div>
+
 </body>
 </html>
